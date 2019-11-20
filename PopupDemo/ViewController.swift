@@ -10,18 +10,9 @@ import Cocoa
 
 class ViewController: NSViewController {
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-
-		// Do any additional setup after loading the view.
-	}
-
-	override var representedObject: Any? {
-		didSet {
-		// Update the view, if already loaded.
-		}
-	}
-
+	@objc dynamic var optionsForPopup = [Option(name: "Item A", identifier: "id 1"),
+										 Option(name: "Item B", identifier: "id 2"),
+										 Option(name: "Item C", identifier: "id 3")]
 
 }
 
